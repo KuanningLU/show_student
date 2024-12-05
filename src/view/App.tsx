@@ -3,6 +3,7 @@ import '../style/App.css'
 import { asyncGet } from '../utils/fetch'
 import { api } from '../enum/api'
 import { Student } from '../interface/Student'
+
 import { resp } from '../interface/resp'
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
         <p>院系: {student.department}</p>
         <p>年級: {student.grade}</p>
         <p>班級: {student.class}</p>
-        <p>Email: {student.Email}</p>
+        <p>Email: {student.email}</p>
         <p>缺席次數: {student.absences ? student.absences : 0}</p>
       </div>
     )
